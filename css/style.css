@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.header{
+    position: relative;
+    background-color:  rgba(190, 191, 194, 0.632);
+    padding: 15px;
+}
+.logo img{
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 2.5px 2.5px auto;
+}
+.navBar{
+    background-color: rgb(247, 125, 11);
+    width: 100%;
+}
+.navBar ul{
+    list-style: none;
+}
+.menu > li{
+    display: inline-block;
+}
+.menu > li > a{        /* Barra de menu  */
+    display: flex;
+    justify-content: center;
+    gap: 10px;              /* separacion de palabras */
+    padding: 15px 30px 15px 130px;   
+    font-size: 30px; 
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:#f6f0f0 ;
+}
+.imgmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 166px;
+    padding: 35px 0 20px; 
+    color: #999;
+    background:  rgba(190, 191, 194, 0.632) ;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-distributed .footer-company-name {
+    font-weight: 300;
+    margin: 0 10px;
+    color: #666;
+}
+
+.footer-distributed .footer-company-name a {
+    color: #ffffff;
+}
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    outline: none;
+}
+
+.imgpie{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.sqsomos{
+    margin: 120px 0px 0px 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.sqsomos0{
+    margin: 55px 0px 0px 50px;
+    line-height: 10px;  
+}
+.textoConta{
+    margin: 10px 0px 0px 50px;
+    line-height: 25px;
+    font-size: 25px;
+}
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 0px;
+    border: 1px  #CCC;
+    border-radius: 50px;
+  }
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+  }
+  label {
+    /* Tamaño y alineación FORM */
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* TEXTO FORM */
+    font: 15px sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 400px;
+    box-sizing: border-box;
+  
+    /* Bordes del campo del formulario */
+    border: 3px solid rgb(234, 11, 11);
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Destacado para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Alinea los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Espacio para escribir texto */
+    height: 100px;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 7 0px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  button {
+    /* Espacio entre las etiquetas y sus campos de texto */
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+,.imgProductos{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.imgProductos img {
+    margin-top: 40px;
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+}

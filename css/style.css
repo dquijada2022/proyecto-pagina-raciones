@@ -4,37 +4,159 @@
     box-sizing: border-box;    
 }
 
-.header{
-    position: relative;
-    background-color:  rgba(190, 191, 194, 0.632);
-    padding: 15px;
+.imgpie{
+  position:absolute;
+  margin-right: auto;
 }
+
 .logo img{
-    width: 80px;
-    position: absolute;
-    border-radius: 50%;
-    margin: 2.5px 2.5px auto;
+  width: 80px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 2.5px 2.5px auto;
 }
-.navBar{
-    background-color: rgb(247, 125, 11);
-    width: 100%;
+
+.logo img:hover, img:focus{
+ width:100px;
+ height: 100px;
 }
-.navBar ul{
-    list-style: none;
-}
+
 .menu > li{
     display: inline-block;
+   display: inline-block;
 }
-.menu > li > a{        /* Barra de menu  */
+
+.menu li a:hover{
+   color:#f6f0f0 ;
+}
+
+.html {
+   height: 100%;
+ }
+ 
+ .body {
+   font-family: "Public Sans", sans-serif;
+   font-size: 1.2rem;
+   min-height: 100%;
+ }
+ 
+ .grid-container > * {
+   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+   border-radius: 4px;
+   padding: 10px;
+ }
+ 
+ .header {
+   grid-area: header;
+   background-color: #f3eae8;
+ }
+ 
+ .navbar {
+   grid-area: navbar;
+   background-color: #afd6af;
+ }
+ 
+ .main {
+   grid-area: main;
+   background-color: #f5f5f5;
+ }
+ 
+.foto img{
+  width: 100px;
+  height: 100px;
+}
+.galeria{
+  margin: 10PX 100PX auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+ .footer {
+   grid-area: footer;
+   background-color: #8c96a0;
+  }
+
+  .video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video iframe,
+    .video object,
+    .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+ .grid-container {
+   display: grid;
+   gap: 10px;
+   grid-template:
+     "header"  100px
+     "navbar"  50px
+     "main"    auto
+     "footer"  100px;
+ }
+ 
+ @media screen and (max-width: 320px) {
+   .grid-container {
+     grid-template-columns: 320px auto;
+     grid-template-rows: 100px 50px auto 100px;
+     grid-template-areas: 
+     "header"
+     "navbar"
+     "main"
+     "footer"
+   }
+   .imgpie{
+    position:absolute;
+    padding: 20px 10px 10px 220px;
+  }
+  .menu > li > a{        /* Barra de menu  */
     display: flex;
     justify-content: center;
     gap: 10px;              /* separacion de palabras */
     padding: 15px 30px 15px 130px;   
     font-size: 30px; 
+    gap: 8px;              /* separacion de palabras */
+    padding: 1px auto;   
+    font-size: 12px; 
     text-decoration: none;
+ }
+
+ .foto img{
+  width: 80px;
+  height: 80px;
 }
 .menu li a:hover{
     color:#f6f0f0 ;
+
+.galeria{
+  margin: 10px 10px auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.foto img:hover,
+img:focus{
+  width:200px;
+  height: 200px;
+}
+
+.footer-company{
+  display: flex;
+  justify-content: center;
+  gap: 2px;              /* separacion de palabras */
+  font-size: 15px;
 }
 .imgmain{
     display: flex;
@@ -50,6 +172,29 @@
     display: flex;
     flex-direction: row;
 }
+}
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "main main"
+    "footer  footer"
+  }
+  .imgpie{
+   position:absolute;
+   padding: 50px 0px 0px 500px;
+ }
+ .menu > li > a{        /* Barra de menu  */
+   display: flex;
+   justify-content: center;
+   gap: 10px;              /* separacion de palabras */
+   padding: 10px 10px 10px 10px;   
+   font-size: 20px; 
+   text-decoration: none;
+}
 
 .footer-distributed .footer-company-name {
     font-weight: 300;
@@ -57,10 +202,30 @@
     color: #666;
 }
 
+.foto img{
+ width: 100px;
+ height: 100px;
+}
+.galeria{
+ margin: 50px 50px auto;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ column-gap: 1rem;
+ row-gap: 1rem;
+}
+
 .footer-distributed .footer-company-name a {
     color: #ffffff;
 }
-a {
+ 
+.footer-company{
+ display: flex;
+ justify-content: center;
+ gap: 5px;              /* separacion de palabras */
+ padding: 15px 50px 15px 40px ; 
+}
+
+.a {
     color: #1f1f1f;
     text-decoration: none;
     outline: none;
@@ -77,47 +242,16 @@ a {
     line-height: 50px;
     font-size: 20px;
 }
-.sqsomos0{
-    margin: 55px 0px 0px 50px;
-    line-height: 10px;  
-}
-.textoConta{
-    margin: 10px 0px 0px 50px;
-    line-height: 25px;
-    font-size: 25px;
-}
-form {
-    /* Centrar el formulario en la página */
-    margin: 0 auto;
-    width: 400px;
-    /* Esquema del formulario */
-    padding: 0px;
-    border: 1px  #CCC;
-    border-radius: 50px;
-  }
-  ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-  }
-  label {
-    /* Tamaño y alineación FORM */
-    display: inline-block;
-    width: 60px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* TEXTO FORM */
-    font: 15px sans-serif;
-  
-    /* Tamaño uniforme del campo de texto */
-    width: 400px;
-    box-sizing: border-box;
-  
-    /* Bordes del campo del formulario */
-    border: 3px solid rgb(234, 11, 11);
+    }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "main main"
+    "footer  footer"
   }
   
   input:focus,
@@ -126,32 +260,57 @@ form {
     border-color: #000;
   }
   
-  textarea {
-    /* Alinea los campos de texto multilínea con sus etiquetas */
-    vertical-align: top;
-  
-    /* Espacio para escribir texto */
-    height: 100px;
-  }
-  
   .button {
     /* Alinear los botones con los campos de texto */
     padding-left: 7 0px; /* mismo tamaño que los elementos de la etiqueta */
-  }
-  
-  button {
     /* Espacio entre las etiquetas y sus campos de texto */
     margin-top: 20px;
     margin-left: 150px;
   }
-,.imgProductos{
+
+  .imgProductos{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
+
+.imgpie{
+   position:absolute;
+   padding: 50px 0px 0px 1000px;
+ }
+ .menu > li > a{        /* Barra de menu  */
+   display: flex;
+   justify-content: center;
+   gap: 10px;              /* separacion de palabras */
+   padding: 10px 10px 10px 10px;   
+   font-size: 20px; 
+   text-decoration: none;
+}
+
 .imgProductos img {
     margin-top: 40px;
     width: 300px;
     height: 300px;
     padding: 1rem;
+}
+
+.foto img{
+ width: 100px;
+ height: 100px;
+}
+
+.galeria{
+ margin: 50px 50px auto;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ column-gap: 1rem;
+ row-gap: 1rem;
+}
+
+.footer-company{
+ display: flex;
+ justify-content: center;
+ gap: 5px;              /* separacion de palabras */
+ padding: 15px 50px 15px 40px ; 
+}
 }

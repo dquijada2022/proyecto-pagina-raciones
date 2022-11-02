@@ -8,15 +8,6 @@
 .header {
   grid-area: header;
   background-color: #123456; }
-  .header .logo img {
-    width: 80px;
-    position: absolute;
-    border-radius: 50%;
-    margin: 10px 10px auto; }
-  .header .logo img:hover,
-  .header img:focus {
-    width: 100px;
-    height: 100px; }
 
 body {
   font-family: sans-serif;
@@ -80,12 +71,24 @@ body {
   align-items: center; }
 
 @media (max-width: 420px) {
+  div.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto; }
+  img {
+    width: 100%;
+    height: auto; }
   .grupo-1 {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     /* Centra */
-    padding: 1px 0px; } }
+    padding: 1px 0px; }
+  .box h2 {
+    color: white;
+    font-variant: sans-serif;
+    text-shadow: 1px 1px black;
+    font-size: medium; } }
 
 .pie-pagina {
   background-color: #123456;

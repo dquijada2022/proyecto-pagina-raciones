@@ -1,22 +1,37 @@
 // Pantallas Extra anchas
 
-@media(min-width: 1400px){
-}
+//@media(min-width: 1400px){
+//}
 
 
 // Pantallas medianas
 
-@media(max-width:992px){
+//`@media(max-width:992px){
 
-}
+//}
 
 
 // Pantallas pequeñas
 
 @media(max-width:420px){
+    div.container {
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+        }
+        img {
+        width: 100%;
+        height: auto;
+        }
     .grupo-1{
         width: 80%;
         grid-template-columns: repeat(1, 1fr) ;
         grid-gap: 20px;  /* Centra */
         padding: 1px 0px;}
+    .box h2{
+        color:$txt-menu;
+        font-variant: $fon-vari;
+        text-shadow: 1px 1px $txt-shad;
+        font-size: medium;
+    }
 }

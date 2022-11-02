@@ -1,16 +1,62 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color:#8c96a0;
-}
-.first-container-footer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    &:first-child{
-        display: flex;
-        justify-content: center;
+
+.pie-pagina{
+    background-color: $bkg-menu;
+    font-family: $fon-body;
+    padding: 1em 0;
+    margin-top: auto;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-gap: 50px;  /* Centra */
+        padding: 4px 0px;
+        .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box figure img{
+            width: 80px;
+            border-radius: 50%;
+        }
+        .box  img:hover,
+        img:focus{
+            width:200px;
+            height:200px;
+        }
+        .box h2{
+            color:$txt-menu;
+            font-variant: $fon-vari;
+            text-shadow: 1px 1px $txt-shad;
+        }
+        .box p{
+            color: $txt-secu;
+            margin-bottom: 10px;
+        }
+        .red-social a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: $bkg-icon;
+            margin-right: 10px;
+            background-color: $recua-icon; 
+            text-align: center;
+            transition: all 300ms ease;
+        }
+        .red-social a:hover{
+            color:$resal-icon;
+        }
+    }
+    .grupo-2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff
     }
 }

@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background-color:#123456;
+    background-color: $bkg-menu;
     
     .logo img{
         width: 80px;
@@ -13,4 +13,5 @@
        width:100px;
        height: 100px;
       }
+      
 }

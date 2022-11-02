@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:#8c96a0;
+}
+.first-container-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    &:first-child{
+        display: flex;
+        justify-content: center;
+    }
+}

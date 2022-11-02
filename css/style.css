@@ -19,8 +19,9 @@
 body {
   font-family: sans-serif; }
 
-.header .lu {
-  list-style: none; }
+.ul {
+  list-style: none;
+  padding-top: 30px; }
 
 .header .respmenu a {
   color: inherit;

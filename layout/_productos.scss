@@ -1,0 +1,18 @@
+/*.galeria{
+    margin: 10PX 100PX auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .mainp {
+    grid-area: main;
+    background-color: #f5f5f5;
+  }
+*/
+.grid-gallery {
+    display: grid;
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+  }

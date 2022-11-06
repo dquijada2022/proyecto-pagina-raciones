@@ -2,11 +2,17 @@
 $bkg-menu:#123456;
 $txt-shad:black;
 $txt-menu:white;
+$txt-primario:white;
 $txt-secu:#efefef;
 $bkg-icon:#fff ;
 $recua-icon:#0d2033;
 $resal-icon: aqua;
+$col-secm: grey;
 
 /* Tipo de letras */
 $fon-body: sans-serif;
 $fon-vari: sans-serif;
+
+$image-size: 200px
+$gap-size: 1rem
+$breakpoints: ("small": 320px, "medium": 768px, "large": 1024px) !default

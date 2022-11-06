@@ -142,15 +142,27 @@
   }
 }
  .grupo-1{
-    width: 80%;
-    grid-template-columns: repeat(1, 1fr) ;
-    grid-gap: 20px;  /* Centra */
+    width: 50%;
+    grid-template-columns: repeat(1, 2fr) ;
+    grid-gap: 5px;  /* Centra */
     padding: 1px 0px;}
 .box h2{
     color:$txt-menu;
     font-variant: $fon-vari;
     text-shadow: 1px 1px $txt-shad;
-    font-size: medium;
+    font-size: 12px;
+}
+.pie-pagina{
+  font-size: 10px;
+}
+.galeria{
+  margin: auto;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(1,2fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 }
 
@@ -228,6 +240,17 @@
     text-shadow: 1px 1px $txt-shad;
     font-size: medium;
 }
+.pie-pagina{
+  font-size: 12px;
+}
+.galeria{
+  margin: 5px 5px auto;
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
 }
 
 @media all and (min-width: 1024px) {
@@ -304,5 +327,13 @@
     text-shadow: 1px 1px $txt-shad;
     font-size: medium;
 }
+.galeria{
+  margin: 10px 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
 
 }

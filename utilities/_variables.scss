@@ -10,9 +10,9 @@ $resal-icon: aqua;
 $col-secm: grey;
 
 /* Tipo de letras */
+@import url( 'https://fonts.googleapis.com/css?family=Roboto');
 $fon-body: sans-serif;
 $fon-vari: sans-serif;
-
-$image-size: 200px
-$gap-size: 1rem
-$breakpoints: ("small": 320px, "medium": 768px, "large": 1024px) !default
+$fuente-form: 'Roboto', sans-serif;
+$color-form: #455a64;
+$bk1: 700px;

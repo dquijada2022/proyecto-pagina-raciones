@@ -1,7 +1,7 @@
 .video{
     position: relative;
-    padding-bottom: 56.25%; /* 16/9 ratio */
-    padding-top: 30px; /* IE6 workaround*/
+    padding-bottom: 100%; 
+    padding-top: 30px; 
     height: 0;
     overflow: hidden;
     }
@@ -10,8 +10,31 @@
     .video object,
     .video embed {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 170px;
+    left: 200px;
+    width: 50%;
+    height: 50%;
     }
+    .video1{
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-gap: 5px;  /* Centra */
+        padding: 1px 0px;}
+        
+        .video h2{
+          color:$txtfb-h2;
+          font-variant: $fon-vari;
+          text-shadow: 1px 1px $txt-shad;
+          font-size: 18px;
+      }
+      .video h3{
+        color:$txt-h3y4;
+        font-variant: $fon-vari;
+        font-size: 12px;
+      }
+      .video h4{
+        color:$txt-h3y4;
+        font-variant: $fon-vari;
+        font-size: 12px;
+      }
+      

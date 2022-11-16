@@ -44,13 +44,16 @@ body {
   .respmenu {
     color: $txt-menu;
     position: relative;
-    min-height: 100px;
-    margin-top: 60px;
+    min-height: 90px;
+    margin-top: 100px;
   }
 
   .respmenu nav {
     display: none;
     margin: 0;
+    .nav li{
+      padding: 2px;
+    }
   }
 
   .respmenu input:checked ~ nav {
@@ -65,10 +68,10 @@ body {
     display: none;
   }
   .logo img{
-    width: 80px;
+    width: 100px;
     position: absolute;
     border-radius: 50%;
-    margin: 0;
+    margin: 10px 10px;
   }
 }
 
@@ -76,4 +79,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.marquesina{
+  width:90%; 
+  position: absolute;
+  margin-top:  10px;
+  color: $txt-menu ;
+  margin-left: 100px;
+  font-size: 20px;
 }

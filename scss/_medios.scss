@@ -76,6 +76,15 @@
         text-shadow: 1px 1px $txt-shad;
         font-size: medium;
     }
+    .video iframe,
+    .video object,
+    .video embed {
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    width: 40%;
+    height: 40%;
+    }
 }
 
 @media all and (min-width: 320px) {
@@ -140,6 +149,15 @@
     padding: 10px;
     border-radius: 100%;
   }
+  .video iframe,
+  .video object,
+  .video embed {
+  position: absolute;
+  top: 170px;
+  left: 220px;
+  width: 40%;
+  height: 40%;
+  }
 }
  .grupo-1{
     width: 50%;
@@ -164,6 +182,29 @@
   column-gap: 1rem;
   row-gap: 1rem;
 }
+.video1{
+  width: 20%;
+  grid-template-columns: repeat(1, 2fr) ;
+  grid-gap: 5px;  /* Centra */
+  padding: 1px 0px;}
+  
+  .video h2{
+    color:$txtfb-h2;
+    font-variant: $fon-vari;
+    text-shadow: 1px 1px $txt-shad;
+    font-size: 12px;
+}
+.video h3{
+  color:$txt-h3y4;
+  font-variant: $fon-vari;
+  font-size: 12px;
+}
+.video h4{
+  color:$txt-h3y4;
+  font-variant: $fon-vari;
+  font-size: 10px;
+}
+
 }
 
 @media all and (min-width: 768px) {
@@ -249,6 +290,15 @@
   grid-template-columns: repeat(3,2fr);
   column-gap: 1rem;
   row-gap: 1rem;
+}
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 170px;
+left: 200px;
+width: 50%;
+height: 50%;
 }
 
 }
